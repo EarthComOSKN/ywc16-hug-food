@@ -27,6 +27,9 @@
         <a class="navbar-item">
             <router-link to="/shoppingcart">Shopping Cart</router-link>
         </a>
+        <a class="navbar-item">
+            <p>earth</p>
+        </a>
         
 
     

@@ -1,45 +1,74 @@
 <template>
   <div class="home">
-    <div class='carousel carousel-animated carousel-animate-slide'>
-  <div class='carousel-container'>
-    <div class='carousel-item has-background is-active'>
-      <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" width="640" height="310" />
-      <div class="title">Merry Christmas</div>
+    
+  <img src="https://via.placeholder.com/2000x600">
+  <div class="container">
+    <div class="columns" style="margin-top: -100px;">
+      <article-card/>
+      <article-card/>
+      <article-card/>
     </div>
-    <div class='carousel-item has-background'>
-      <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" width="640" height="310" />
-      <div class="title">Original Gift: Offer a song with <a href="https://lasongbox.com" target="_blank">La Song Box</a></div>
+    <div class="columns">
+      <picture-card/>
     </div>
-    <div class='carousel-item has-background'>
-      <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" width="640" height="310" />
-      <div class="title">Sushi time</div>
+    <div class="left">
+      เมนูตาามฤดูกาล
     </div>
-    <div class='carousel-item has-background'>
-      <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" width="640" height="310" />
-      <div class="title">Life</div>
+    <div class="columns">
+      <carousel :perPage="5">
+        <slide class="column">
+            <product-card/>
+        </slide>
+        <slide class="column">
+            <product-card/>
+        </slide>
+        <slide  class="column">
+            <product-card/>
+        </slide>
+        <slide  class="column">
+            <product-card/>
+        </slide>
+        <slide  class="column">
+            <product-card/>
+        </slide>
+      </carousel>
+    </div>
+    บทความและโปรโมชั่น
+    <div class="columns">
+      <picture-card/>
+    </div>
+    <div class="columns">
+      <article-card/>
+      <article-card/>
+      <article-card/>
     </div>
   </div>
-  <div class="carousel-navigation is-centered">
-    <div class="carousel-nav-left">
-      <i class="fa fa-chevron-left" aria-hidden="true"></i>
-    </div>
-    <div class="carousel-nav-right">
-      <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </div>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      เปลี่ยนรอยยิ้มเป็นความสุข
+    </p>
   </div>
-</div>
+</footer>
+
 
   </div>
 </template>
 <script type="text/javascript" src="/node_modules/bulma-extensions/bulma-carousel/dist/bulma-carousel.min.js"></script>
 <script>
 // @ is an alias to /src
-
-
+import { Carousel, Slide } from 'vue-carousel';
+import ArticleCard from '@/components/ArticleCard.vue';
+import PictureCard from '@/components/PictureCard.vue';
+import ProductCard from '@/components/ProductCard.vue';
 export default {
   name: 'home',
   components: {
-
+    Carousel,
+    Slide,
+    ArticleCard,
+    PictureCard,
+    ProductCard,
   },
 };
 </script>
