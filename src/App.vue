@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <nav-bar></nav-bar>
+    <nav-bar />
+    <ShoppingCart />  
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -12,10 +13,12 @@
 <script>
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue';
+import ShoppingCart from '@/components/ShoppingCart.vue';
 
 export default {
   components: {
     NavBar,
+    ShoppingCart
   },
 };
 </script>
