@@ -10,7 +10,7 @@
       </div>
       <div class="columns">
         <div class="column is-3">
-          <img src="https://via.placeholder.com/150" alt="">
+          <img src="/public/picture/9.jpg" alt="">
         </div>
         <div class="column">
           <strong>ชื่อรายการ</strong>
