@@ -2,7 +2,7 @@
   <div class="column">
     <div class="productcard">
         <router-link to="/productmalldetail">
-        <img :src="'./picture/'+path" class="img-card"  style="width:250px; height:250px;">
+        <img :src="'./picture/'+product.path" class="img-card"  style="width:250px; height:250px;">
         </router-link>
         <div class="text top-left">
             <img src="https://via.placeholder.com/50x50" class="img-avatar">
@@ -13,8 +13,8 @@
      <div class="card-content">
         <div class="media">
         <div class="media-content">
-            <p class="subtitle is-6">125 ml</p>
-            <p class="title is-4">5 บาท</p>
+            <p class="subtitle is-6">{{product.name}}</p>
+            <p class="title is-4">{{product.price}}</p>
         </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
 <script>
 export default {
   name: 'ProductCard',
-  props: ['path']
+  props: ['product']
 };
 </script>
 

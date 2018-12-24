@@ -1,12 +1,13 @@
 <template>
   <div class="home">
     
-  <img src="https://via.placeholder.com/2000x600">
+  <img src="../../public/picture/h1.jpg">
   <div class="container">
     <div class="columns" style="margin-top: -100px;">
-      <article-card/>
-      <article-card/>
-      <article-card/>
+      <div v-for="item in listOfArticle" :key="item.id">
+        <article-card :path="item" />      
+      </div>
+
     </div>
     <div class="columns">
       <picture-card/>
@@ -17,7 +18,7 @@
     <div class="columns">
       <carousel :perPage="5">
         <slide v-for="item in listOfScale" :key="item.id">
-          <product-card :path="item"/>
+          <product-card :product="item"/>
         </slide>
       </carousel>
     </div>
@@ -29,18 +30,12 @@
       <picture-card/>
     </div>
     <div class="columns">
-      <article-card/>
-      <article-card/>
-      <article-card/>
+      <div v-for="item in listOfArticle" :key="item.id">
+        <article-card :path="item" />      
+      </div>
     </div>
   </div>
-  <footer class="footer">
-  <div class="content has-text-centered head-title">
-    <p>
-      เปลี่ยนรอยยิ้มเป็นความสุข
-    </p>
-  </div>
-</footer>
+
 
 
   </div>
@@ -57,7 +52,8 @@ export default {
   data() {
     return(
       {
-        listOfScale : ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.png","7.jpg","8.jpg","9.jpg","10.jpg"]
+        listOfScale : [{ path:"1.jpg",name: "test",price: 25},{ path:"2.jpg",name: "test",price: 25},{ path:"3.jpg",name: "test",price: 25},{ path:"4.jpg",name: "test",price: 25},{ path:"5.jpg",name: "test",price: 25},{ path:"6.png",name: "test",price: 25},{ path:"7.jpg",name: "test",price: 25},{ path:"8.jpg",name: "test",price: 25},{ path:"9.jpg",name: "test",price: 25},{ path:"10.jpg",name: "test",price: 25}],
+        listOfArticle: ["a1.png","a2.png","a3.png"],
       }
     );
   },

@@ -7,7 +7,7 @@
   <div class="column">
     <div class="">
 
-        <img src="../../public/picture/ten.jpg" class="img-card">
+        <img :src="'./picture/'+path" class="img-card">
     </div>
     <div class="card-content">
         <div class="media">
@@ -24,7 +24,8 @@
 
 <script>
 export default {
-  name: 'ArticleCard'
+  name: 'ArticleCard',
+  props: ['path'],
 };
 </script>
 
