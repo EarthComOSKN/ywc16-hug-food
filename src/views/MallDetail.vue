@@ -22,16 +22,22 @@
                 <div class="content left">
                   <p class="title">Tall tile</p>
                   <p class="subtitle">With even more content</p>
-                  <img src="https://via.placeholder.com/50x50" class="img-avatar">
-                   ยายแป๋มตอแหล
+                  <div class="columns" style="margin: 1rem 0;">
+                    <div class="column is-narrow">
+                      <img src="https://via.placeholder.com/50x50" class="img-avatar">
+                    </div>
+                    <div class="column">
+                      <p style="margin-top: 1rem;">ยายแป๋มตอแหล</p>
+                    </div>
+                  </div>
                   <div class="is-divider" data-content=""></div>
                   <div class="content">
                     <div class="level">
                       <div class="level-left">
-                        $59
-                        </div>
+                        <h1 class="title" style="color: #e38415">59THB</h1>
+                      </div>
                       <div class="level-right">
-                        <button class="button">+ เพิ่มในตะกร้า</button>
+                        <button class="button is-primary" @click="addToCart()" style="background-color: #e38415">+ เพิ่มในตะกร้า</button>
                       </div>
                     </div>
                     <div>
@@ -64,6 +70,14 @@ export default {
     Carousel,
     Slide
   },
+  methods: {
+    addToCart() {
+      this.$toast.open({
+        message: 'เพิ่มลงตะกล้า',
+        type: 'is-success'
+      })
+    }
+  }
 };
 </script>
 
