@@ -47,7 +47,7 @@
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item">
-            <router-link to="/"><strong>สวัสดี</strong></router-link>
+            <router-link to="/"><strong>หน้าแรก</strong></router-link>
           </a>
           <a class="navbar-item">
             <router-link to="/mall">ร้านค้า</router-link>
