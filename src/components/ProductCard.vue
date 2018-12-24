@@ -14,7 +14,7 @@
         <div class="media">
         <div class="media-content">
             <p class="subtitle is-6 pdname">{{product.name}}</p>
-            <p class="title is-4 pdprice">{{product.price}} Bath</p>
+            <p class="title is-4 pdprice">{{product.price}} THB</p>
         </div>
         </div>
     </div>

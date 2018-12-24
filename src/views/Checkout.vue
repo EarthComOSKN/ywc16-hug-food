@@ -126,7 +126,7 @@
                   </b-field>
                 </div>
                 <div class="column is-narrow">
-                  <b-field label="ไปรษณี">
+                  <b-field label="รหัสไปรษณีย์">
                     <b-input type="text" placeholder=""></b-input>
                   </b-field>
                 </div>
@@ -154,7 +154,7 @@
                 <div class="column is-3">฿ 888</div>
               </div>
               <div class="columns">
-                <div class="column">ค่าส่ง</div>
+                <div class="column">ค่าจัดส่ง</div>
                 <div class="column is-3">฿ 888</div>
               </div>
               <div class="columns">
@@ -163,7 +163,7 @@
               </div>
               <div class="divider"></div>
               <div class="columns">
-                <div class="column"><strong>ค่าบริการ</strong></div>
+                <div class="column"><strong>ยอดรวม</strong></div>
                 <div class="column is-3"><strong>฿ 888</strong></div>
               </div>
             </div>
