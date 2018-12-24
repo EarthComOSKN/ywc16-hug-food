@@ -7,10 +7,10 @@
       <router-link to="/about">About</router-link>
     </div> -->
     <router-view/>
-    <footer class="footer">
-  <div class="content has-text-centered head-title">
+    <footer class="footer" style="background-color: black; color: white; padding: 1rem 0; margin-top: 4rem;">
+  <div class="content has-text-centered" >
     <p>
-      เปลี่ยนรอยยิ้มเป็นความสุข
+      &copy; Hugfood 2018 All right reserved
     </p>
   </div>
 </footer>
