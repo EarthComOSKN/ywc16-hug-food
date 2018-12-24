@@ -25,9 +25,6 @@
           <a class="navbar-item">
             <router-link to="/restaurant">เฟรช</router-link>
           </a>
-          <a class="navbar-item">
-            <span @click="toggleCartSideBar()">ตะกร้า</span>
-          </a>
           <div class="spacer"></div>
           <a class="navbar-item">
             <img class="avatar" src="/picture/jixiao-huang-672681-unsplash.jpg" alt="">
@@ -66,6 +63,7 @@
     top: 0;
     padding: 1rem 2rem;
     width: 100vw;
+    font-family: 'athiti';
 
     a {
       color: white;
