@@ -4,9 +4,9 @@
         <router-link to="/productmalldetail">
         <img :src="'./picture/'+product.path" class="img-card"  style="width:250px; height:250px;object-fit: cover;">
         </router-link>
-        <div class="text top-left">
+        <div class="text top-left" style="width:300px;">
             <img src="../../public/picture/avatar1.jpg" class="img-avatar">
-           <span style="color:#ffb661;">&nbsp โดย &nbsp</span><span>ลุงเสม สุราษฐานี</span>
+           <span style="color:#ffb661;">&nbsp โดย &nbsp</span><span>ลุงเสม สุราษฎร์ธานี</span>
         </div>
         
     </div>
@@ -53,9 +53,10 @@ export default {
   color: white;
 }
 .img-avatar {
+  margin-left: -40px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     object-fit: cover;
 }
 

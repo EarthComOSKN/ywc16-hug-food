@@ -7,7 +7,7 @@
   <div class="column">
     <div class="">
         <router-link to="/article">
-        <img :src="'./picture/'+product.path" class="img-card" style="object-fit: cover;">
+        <img :src="'./picture/'+product.path" class="img-card" style="object-fit: cover;width:400px;height:200px;">
         </router-link>
     </div>
     <div class="card-content">
