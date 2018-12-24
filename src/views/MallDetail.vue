@@ -2,8 +2,8 @@
   <div class="mall-detail">
     <div class="navbar-bg"></div>
       <div class="columns">
-        <div class="column" style="background-color : rgba(100,100,100,0.1); height :calc(100vh); padding:70px 50px 0px 50px;">
-          <carousel :perPage="1" :navigationEnabled="true">
+        <div class="column" style="background-color : rgba(100,100,100,0.1); height :calc(100vh - 4rem - 28px); padding:70px 50px 0px 50px;">
+          <carousel class="is-hidden-touch" :perPage="1" :navigationEnabled="true">
             <slide>
             <img src="https://via.placeholder.com/800x800">
             </slide>

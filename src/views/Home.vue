@@ -3,7 +3,7 @@
     
   <img src="../../public/picture/h1.jpg">
   <div class="container">
-    <div class="columns" style="margin-top: -150px;">
+    <div class="columns" style="margin-top: -80px;">
       <div v-for="item in listOfArticle" :key="item.id">
         <article-card :product="item" />      
       </div>
@@ -11,11 +11,11 @@
     <div class="columns">
       <picture-card name="bb.jpg"/>
     </div>
-    <div class="left head-title">
+    <div class="left head-title is-hidden-touch">
       เมนูตามฤดูกาล
     </div>
     <div class="columns">
-      <carousel :perPage="5">
+      <carousel class="is-hidden-touch" :perPage="5">
         <slide v-for="item in listOfScale" :key="item.id">
           <product-card :product="item"/>
         </slide>
