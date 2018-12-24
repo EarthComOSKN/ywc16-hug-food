@@ -7,13 +7,13 @@
   <div class="column">
     <div class="">
 
-        <img :src="'./picture/'+path" class="img-card">
+        <img :src="'./picture/'+product.path" class="img-card" style="object-fit: cover;">
     </div>
     <div class="card-content">
         <div class="media">
         <div class="media-content">
-            <p class="subtitle is-6">อาหารสุขภาพ</p>
-            <p class="title is-4">อยากหุ่นปังต้องทาน! 10 อาหารสุขภาพที่ควรกินก่อนปีใหม่</p>
+            <p class="subtitle is-6 atitle">{{product.title}}</p>
+            <p class="title is-4 aname">{{product.name}}</p>
         </div>
         </div>
     </div>
@@ -25,7 +25,7 @@
 <script>
 export default {
   name: 'ArticleCard',
-  props: ['path'],
+  props: ['product'],
 };
 </script>
 
@@ -34,5 +34,23 @@ export default {
 .small {
     width: 300px;
     height: 200px;
+}
+.atitle {
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7f7f7f;
+}
+.aname {
+  font-size: 27px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #212121;
 }
 </style>
