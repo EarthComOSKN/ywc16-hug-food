@@ -10,7 +10,7 @@
     <div class="container">
       <div class="container">
         <div class="columns">
-          <carousel :perPage="5">
+          <carousel class="is-hidden-touch" :perPage="5">
             <slide v-for="item in listOfScale" :key="item.id">
               <product-card :product="item"/>
             </slide>

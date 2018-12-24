@@ -14,11 +14,11 @@
       </div>
         </div>
       <div class="container">
-        <div class="head-title" style="text-align: left;">
+        <div class="head-title is-hidden-touch" style="text-align: left;">
           ได้รับความนิยม
         </div>
         <div class="columns">
-          <carousel :perPage="5">
+          <carousel class="is-hidden-touch" :perPage="5">
             <slide v-for="item in listOfScale" :key="item.id">
               <product-card :product="item"/>
             </slide>
