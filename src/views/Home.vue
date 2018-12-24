@@ -16,20 +16,8 @@
     </div>
     <div class="columns">
       <carousel :perPage="5">
-        <slide class="column">
-            <product-card/>
-        </slide>
-        <slide class="column">
-            <product-card/>
-        </slide>
-        <slide  class="column">
-            <product-card/>
-        </slide>
-        <slide  class="column">
-            <product-card/>
-        </slide>
-        <slide  class="column">
-            <product-card/>
+        <slide v-for="item in listOfScale" :key="item.id">
+          <product-card :path="item"/>
         </slide>
       </carousel>
     </div>
@@ -66,6 +54,13 @@ import PictureCard from '@/components/PictureCard.vue';
 import ProductCard from '@/components/ProductCard.vue';
 export default {
   name: 'home',
+  data() {
+    return(
+      {
+        listOfScale : ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.png","7.jpg","8.jpg","9.jpg","10.jpg"]
+      }
+    );
+  },
   components: {
     Carousel,
     Slide,

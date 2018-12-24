@@ -2,11 +2,11 @@
   <div class="column">
     <div class="productcard">
         <router-link to="/productmalldetail">
-        <img src="https://via.placeholder.com/250x250" class="img-card" >
+        <img :src="'./picture/'+path" class="img-card"  style="width:250px; height:250px;">
         </router-link>
         <div class="text top-left">
             <img src="https://via.placeholder.com/50x50" class="img-avatar">
-           ยายแป๋มตอแหล
+           <span style="color:#ffb661;">&nbsp โดย &nbsp</span><span>ลุงเสม สุราษฐานี</span>
         </div>
         
     </div>
@@ -23,7 +23,8 @@
 
 <script>
 export default {
-  name: 'ProductCard'
+  name: 'ProductCard',
+  props: ['path']
 };
 </script>
 
@@ -33,7 +34,7 @@ export default {
 .top-left {
   position: absolute;
   top: 8px;
-  left: 16px;
+  left: 0px;
 }
 .productcard {
       position: relative;

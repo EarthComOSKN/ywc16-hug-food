@@ -7,6 +7,13 @@
       <router-link to="/about">About</router-link>
     </div> -->
     <router-view/>
+    <footer class="footer">
+  <div class="content has-text-centered head-title">
+    <p>
+      เปลี่ยนรอยยิ้มเป็นความสุข
+    </p>
+  </div>
+</footer>
   </div>
 </template>
 
