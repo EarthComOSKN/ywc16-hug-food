@@ -1,5 +1,7 @@
 <template>
   <div class="checkout">
+    <div class="navbar-bg"></div>
+    
     <section class="stepbar">
       <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
         <ul>

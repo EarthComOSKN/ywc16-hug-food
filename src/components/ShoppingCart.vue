@@ -1,22 +1,24 @@
 <template>
   <div class="shoping-cart" v-if="isCartSidebarOpen">
     <div class="item-list">
-      <div class="columns">
+      <a href="#" @click="toggleCartSideBar()"><strong>X</strong></a>
+      <br><br>
+      <div class="columns is-mobile boldcol">
         <div class="column">รายการ</div>
         <div class="column is-2">ราคา</div>
-        <div class="column is-2">จำนวน</div>
+        <div class="column is-3">จำนวน</div>
       </div>
       <div class="columns">
         <div class="column is-3">
           <img src="https://via.placeholder.com/150" alt="">
         </div>
         <div class="column">
-          ชื่อรายการ
+          <strong>ชื่อรายการ</strong>
           <br>
           รายละเอียด
         </div>
         <div class="column is-2">฿128</div>
-        <div class="column is-2">1</div>
+        <div class="column is-3">- 1 +</div>
       </div>
     </div>
     <router-link to="/checkout">
@@ -52,12 +54,13 @@ export default {
   .shoping-cart {
     background-color: #c4c4c4;
     width: 400px;
+    max-width: 85vw;
     position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
     z-index: 50;
-    height: 100vh;
+    max-height: 100vh;
 
     .item-list {
       text-align: left;
@@ -70,6 +73,10 @@ export default {
       bottom: 0;
       left: 0;
       width: 100%;
+    }
+
+    .boldcol {
+      font-weight: bold;
     }
   }
 </style>

@@ -85,4 +85,11 @@ export default {
     }
   }
 }
+
+.navbar-bg {
+  width: 100vw;
+  height: calc(2rem + 52px);
+  background-color: black;
+}
+
 </style>

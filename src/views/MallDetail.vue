@@ -1,7 +1,8 @@
 <template>
   <div class="mall-detail">
+    <div class="navbar-bg"></div>
       <div class="columns">
-        <div class="column is-6" style="background-color : rgba(100,100,100,0.1); height :calc(100vh-52px); padding:70px 50px 0px 50px;">
+        <div class="column" style="background-color : rgba(100,100,100,0.1); height :calc(100vh - 4rem - 28px); padding:70px 50px 0px 50px;">
           <carousel :perPage="1" :navigationEnabled="true">
             <slide>
             <img src="https://via.placeholder.com/800x800">
