@@ -52,7 +52,8 @@ export default {
 
 <style lang="scss" scoped>
   .shoping-cart {
-    background-color: #c4c4c4;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.8) 2px 2px 20px 3px;
     width: 400px;
     max-width: 85vw;
     position: fixed;
