@@ -11,7 +11,7 @@
     <div class="columns">
       <picture-card/>
     </div>
-    <div class="left">
+    <div class="left head-title">
       เมนูตาามฤดูกาล
     </div>
     <div class="columns">
@@ -33,7 +33,10 @@
         </slide>
       </carousel>
     </div>
+    <div class="left head-title">
     บทความและโปรโมชั่น
+
+    </div>
     <div class="columns">
       <picture-card/>
     </div>
@@ -44,7 +47,7 @@
     </div>
   </div>
   <footer class="footer">
-  <div class="content has-text-centered">
+  <div class="content has-text-centered head-title">
     <p>
       เปลี่ยนรอยยิ้มเป็นความสุข
     </p>
@@ -78,3 +81,4 @@ footer {
   background-color: #ffeeda;
 }
 </style>
+

@@ -2,7 +2,7 @@
   <div class="column">
     <div class="container">
         <img src="https://via.placeholder.com/2000x410" class="img-card">
-        <div class="text centered">
+        <div class="text centered head-title">
            <p>ยายแป๋มตอแหล</p> 
         </div>
     </div>
@@ -29,7 +29,7 @@ export default {
 }
 .img-card {
 
-    border-radius: 10px;
+  border-radius: 10px;
   box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.11);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }

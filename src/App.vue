@@ -85,4 +85,12 @@ export default {
     }
   }
 }
+.head-title {
+  font-family: 'Athiti', sans-serif;
+  font-size: 32px;
+}
+.sub-head-title{
+    font-family: 'Athiti', sans-serif;
+
+}
 </style>
