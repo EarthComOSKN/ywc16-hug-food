@@ -7,13 +7,13 @@
   <div class="column">
     <div class="">
 
-        <img src="https://via.placeholder.com/400x210" class="img-card">
+        <img src="../../public/picture/ten.jpg" class="img-card">
     </div>
     <div class="card-content">
         <div class="media">
         <div class="media-content">
-            <p class="subtitle is-6">กับข้าวชาววัง</p>
-            <p class="title is-4">5 ขนมสูตรชาววังที่ต้องลอง</p>
+            <p class="subtitle is-6">อาหารสุขภาพ</p>
+            <p class="title is-4">อยากหุ่นปังต้องทาน! 10 อาหารสุขภาพที่ควรกินก่อนปีใหม่</p>
         </div>
         </div>
     </div>

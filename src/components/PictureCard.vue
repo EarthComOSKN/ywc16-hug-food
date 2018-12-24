@@ -28,6 +28,9 @@ export default {
   transform: translate(-50%, -50%);
 }
 .img-card {
-    border-radius: 15px;
+
+    border-radius: 10px;
+  box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.11);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 </style>

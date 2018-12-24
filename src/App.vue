@@ -24,8 +24,52 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../public/font/thsarabunnew-webfont.eot');
+    src: url('../public/font/thsarabunnew-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../public/font/thsarabunnew-webfont.woff') format('woff'),
+         url('../public/font/thsarabunnew-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../public/font/thsarabunnew_bolditalic-webfont.eot');
+    src: url('../public/font/thsarabunnew_bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../public/font/thsarabunnew_bolditalic-webfont.woff') format('woff'),
+         url('../public/font/thsarabunnew_bolditalic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../public/font/thsarabunnew_italic-webfont.eot');
+    src: url('../public/font/thsarabunnew_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../public/font/thsarabunnew_italic-webfont.woff') format('woff'),
+         url('../public/font/thsarabunnew_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../public/font/thsarabunnew_bold-webfont.eot');
+    src: url('../public/font/thsarabunnew_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../public/font/thsarabunnew_bold-webfont.woff') format('woff'),
+         url('../public/font/thsarabunnew_bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'THSarabunNew', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
