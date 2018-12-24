@@ -11,6 +11,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     userId: '',
+    isCartSidebarOpen: false,
     cart: [],
     data: {
       articles,
@@ -25,6 +26,7 @@ export default new Vuex.Store({
     updateUserId: (state, userId) => { state.userId = userId; },
     pushItemToCart: (state, item) => state.cart.push(item),
     spliceItemfromCart: (state, itemIndex) => state.cart.splice(itemIndex, 1),
+    setCartSidebarState: (state, isOpen) => state.isCartSidebarOpen = isOpen
   },
   actions: {
     login(ctx, userId) {
@@ -39,5 +41,8 @@ export default new Vuex.Store({
     removeItemFromCart(ctx, itemIndex) {
       ctx.commit('spliceItemfromCart', itemIndex);
     },
+    toggleCartSideBar(ctx) {
+      ctx.commit('setCartSidebarState', !ctx.state.isCartSidebarOpen);
+    }
   },
 });

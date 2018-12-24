@@ -6,7 +6,6 @@ import Restaurant from './views/Restaurants.vue';
 import ProductMallDetail from './views/MallDetail.vue';
 import ProductRestaurantDetail from './views/RestaurantDetail.vue';
 import Payment from './views/Payment.vue';
-import ShoppingCart from './views/ShoppingCart.vue';
 import Article from './views/Article';
 
 
@@ -35,11 +34,6 @@ export default new Router({
       path: '/restaurant',
       name: 'restaurant',
       component: Restaurant,
-    },
-    {
-      path: '/shoppingcart',
-      name: 'shoppingcart',
-      component: ShoppingCart,
     },
     {
       path: '/productmalldetail',
