@@ -2,10 +2,10 @@
   <div class="column">
     <div class="productcard">
         <router-link to="/productmalldetail">
-        <img :src="'./picture/'+product.path" class="img-card"  style="width:250px; height:250px;">
+        <img :src="'./picture/'+product.path" class="img-card"  style="width:250px; height:250px;object-fit: cover;">
         </router-link>
         <div class="text top-left">
-            <img src="https://via.placeholder.com/50x50" class="img-avatar">
+            <img src="../../public/picture/avatar1.jpg" class="img-avatar">
            <span style="color:#ffb661;">&nbsp โดย &nbsp</span><span>ลุงเสม สุราษฐานี</span>
         </div>
         
@@ -13,8 +13,8 @@
      <div class="card-content">
         <div class="media">
         <div class="media-content">
-            <p class="subtitle is-6">{{product.name}}</p>
-            <p class="title is-4">{{product.price}}</p>
+            <p class="subtitle is-6 pdname">{{product.name}}</p>
+            <p class="title is-4 pdprice">{{product.price}} Bath</p>
         </div>
         </div>
     </div>
@@ -30,7 +30,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  lang="scss">
+.pdname {
 
+  font-size: 17px  !important;
+  color: #291d27  !important;
+}
+.pdprice {
+
+  font-size: 31px  !important;
+  font-weight: bold  !important;
+
+  color: #e38415 !important;
+}
 .top-left {
   position: absolute;
   top: 8px;
@@ -43,6 +54,9 @@ export default {
 }
 .img-avatar {
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 </style>

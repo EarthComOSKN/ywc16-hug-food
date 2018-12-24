@@ -21,7 +21,7 @@
         </div>
         <div class="columns" >
           <div v-for="item in listOfArticle" :key="item.id">
-        <article-card :path="item" />      
+        <article-card :product="item" />      
       </div>
         </div>
 
@@ -47,8 +47,8 @@ export default {
   data() {
     return(
       {
-        listOfScale : [{ path:"1.jpg",name: "test",price: 25},{ path:"2.jpg",name: "test",price: 25},{ path:"3.jpg",name: "test",price: 25},{ path:"4.jpg",name: "test",price: 25},{ path:"5.jpg",name: "test",price: 25},{ path:"6.png",name: "test",price: 25},{ path:"7.jpg",name: "test",price: 25},{ path:"8.jpg",name: "test",price: 25},{ path:"9.jpg",name: "test",price: 25},{ path:"10.jpg",name: "test",price: 25}],
-        listOfArticle: ["a1.png","a2.png","a3.png"],
+        listOfScale : [{ path:"1.jpg",name: "น้ำพริกปลาทู",price: 40},{ path:"2.jpg",name: "กล้วยฉาบ",price: 25},{ path:"3.jpg",name: "กล้วยตาก",price: 25},{ path:"4.jpg",name: "ข้าวต้มมัด",price: 25},{ path:"5.jpg",name: "น้ำพริกปลาแห้ง",price: 25},{ path:"6.png",name: "น้ำพริกอ่อง",price: 25},{ path:"7.jpg",name: "น้ำพริกหนุ่ม",price: 25},{ path:"8.jpg",name: "ขนมจาก",price: 25},{ path:"9.jpg",name: "กาละแม โบราณ",price: 25},{ path:"10.jpg",name: "ปลาร้าบอง",price: 25}],
+        listOfArticle: [{ path:"a1.png",name:"5 อาหารอีสาน รสชาติแบบต้นตำรับ",title:"อาหาร"},{ path:"a2.png",name:"5 เมนู Healthy Style ไทยๆ",title:"สุขภาพ"},{ path:"a3.png",name:"ใครว่าคุณตาทำอาหารไม่เป้น",title:"สร้างแรงบันดาลใจ"}],
       }
     );
   },

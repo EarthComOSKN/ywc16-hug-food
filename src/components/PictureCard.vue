@@ -1,7 +1,7 @@
 <template>
   <div class="column">
     <div class="container">
-        <img src="../../public/picture/bb.jpg" class="img-card">
+        <img :src="'./picture/'+name" class="img-card" style="widht:349px;">
         <!-- <div class="text centered head-title">
            <p>ยายแป๋มตอแหล</p> 
         </div> -->
@@ -11,7 +11,8 @@
 
 <script>
 export default {
-  name: 'PictureCard'
+  name: 'PictureCard',
+  props: ['name'],
 };
 </script>
 
