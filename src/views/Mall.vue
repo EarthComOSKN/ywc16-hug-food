@@ -9,7 +9,7 @@
     </div>
     <div class="container">
         <div class="columns" >
-          <div v-for="item in listOfArticle" :key="item.id">
+          <div v-for="item in listOfArticle" :key="item.id" style="display:flex; justify-content: center;">
         <article-card :product="item" />      
       </div>
         </div>

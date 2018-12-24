@@ -5,13 +5,13 @@
         <div class="column" style="background-color : rgba(100,100,100,0.1); height :calc(100vh - 4rem - 28px); padding:70px 50px 0px 50px;">
           <carousel class="is-hidden-touch" :perPage="1" :navigationEnabled="true">
             <slide>
-            <img src="https://via.placeholder.com/800x800">
+              <img src="/picture/10.jpg">
             </slide>
             <slide>
-              <img src="https://via.placeholder.com/800x800">
+              <img src="/picture/10.jpg">
             </slide>
             <slide>
-              <img src="https://via.placeholder.com/800x800">
+              <img src="/picture/10.jpg">
             </slide>
           </carousel>
         </div>
@@ -20,30 +20,31 @@
             <div class="tile is-parent">
               <article class="tile is-child notifications" style="height:90vh; padding-top:20vh;">
                 <div class="content left">
-                  <p class="title">Tall tile</p>
-                  <p class="subtitle">With even more content</p>
+                  <p class="title">ปลาร้าบอง</p>
+                  <p class="subtitle">ของดีเมืองอุดรฯ รสชาติภูธร มาเป็นต่อนเลยนะจ๊ะ</p>
                   <div class="columns" style="margin: 1rem 0;">
                     <div class="column is-narrow">
                       <img src="../../public/picture/avatar1.jpg" class="img-avatar">
                     </div>
                     <div class="column">
-                      <p style="margin-top: 1rem;">ยายแป๋มตอแหล</p>
+                      <p style="margin-top: 1rem;">คุณยายป้อง </p>
                     </div>
                   </div>
                   <div class="is-divider" data-content=""></div>
                   <div class="content">
                     <div class="level">
                       <div class="level-left">
-                        <h1 class="title" style="color: #e38415">25 THB</h1>
+                        <h1 class="title" style="color: #e38415">฿128</h1>
                       </div>
                       <div class="level-right">
                         <button class="button is-primary" @click="addToCart()" style="background-color: #e38415">+ เพิ่มในตะกร้า</button>
                       </div>
                     </div>
                     <div>
-                      กล้วยฉาบทอดสูตรโบราณ By คุณยายแย้ม วัตถุดิบพื้นบ้านแต่รสชาติไม่บ้าน
-                      <br></br>
-                       เมนูกล้วยฉาบทอดสูตรโบราณของคุณยายแย้ม ได้คัดสรรวัตถุดิบพื้นบ้านมาประกอบอาหารให้มีรสชาติที่อร่อยและไม่ธรรมดา “กล้วย” ต้องเป็นกล้วยหอมเพราะเมื่อกล้วยโดนความร้อนจะทำให้ยิ่งหอมหวานและเพิ่มอรรถรสในการรับประทานมากขึ้น
+                      ปลาร้าบองคุณยายป้อง ตัวแทนของคนอีสานที่ถ่ายทอดความเป็นเอกลักษณ์ผ่านปลาร้า
+
+                      รสเด็ดโดนใจ ไม่หวงเครื่อง ไม่กั๊กสูตร เสมือนทำให้คนที่บ้านทานเอง...
+
 
                     </div>
                     <!-- Content -->

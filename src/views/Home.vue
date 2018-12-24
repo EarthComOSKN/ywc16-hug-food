@@ -3,12 +3,12 @@
     
   <img src="../../public/picture/h1.jpg">
   <div class="container">
-    <div class="columns" style="margin-top: -80px;">
+    <div class="columns" style="margin-top: -80px; display:flex; justify-content: center;">
       <div v-for="item in listOfArticle" :key="item.id">
         <article-card :product="item" />      
       </div>
     </div>
-    <div class="columns">
+    <div class="columns" style="display:flex; justify-content: center;">
       <picture-card name="bb.jpg"/>
     </div>
     <div class="left head-title is-hidden-touch">
@@ -28,7 +28,7 @@
     <div class="columns">
       <picture-card name="bb2.jpg"/>
     </div>
-    <div class="columns" style="">
+    <div class="columns"  style="display:flex; justify-content: center;">
       <div v-for="item in listOfArticle" :key="item.id">
         <article-card :product="item" />      
       </div>

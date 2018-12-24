@@ -1,22 +1,11 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
+    <div class="navbar-brand" style="position: relative;">
       <router-link class="navbar-item" to="/">
         <img src="/picture/hugfood-logo.svg" width="112" height="100%">
       </router-link>
 
-      <!-- <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-        data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a> -->
-      <b-dropdown class="is-hidden-desktop" :mobile-modal="false">
-        <!-- <button class="button is-primary" slot="trigger">
-            <span>Click me!</span>
-            <b-icon icon="menu-down"></b-icon>
-        </button> -->
-
+      <b-dropdown class="is-hidden-desktop" :mobile-modal="false" style="position: absolute; right: 0;">
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" slot="trigger"
         data-target="navbarBasicExample">
           <span aria-hidden="true"></span>

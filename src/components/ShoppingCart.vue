@@ -10,12 +10,12 @@
       </div>
       <div class="columns">
         <div class="column is-3">
-          <img src="/public/picture/9.jpg" alt="">
+          <img src="/picture/10.jpg" alt="">
         </div>
         <div class="column">
-          <strong>ชื่อรายการ</strong>
+          <strong>ปลาร้าบอง</strong>
           <br>
-          รายละเอียด
+          <span style="font-size: 75%">ของดีเมืองอุดรฯ รสชาติภูธร...</span>
         </div>
         <div class="column is-2">฿128</div>
         <div class="column is-3">- 1 +</div>

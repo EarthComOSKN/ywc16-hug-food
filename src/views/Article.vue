@@ -25,25 +25,39 @@
             <br></br>
             เรื่องโดย : กฤตนัน ดิษฐบรรจง
           </div>
-          <div class="column is-narrow">share</div>
+          <!-- <div class="column is-narrow">share</div> -->
         </div>
       </div>
       <div class="column is-2"></div>
     </div>
-    <div class="suggest">
+    <div class="suggest is-hidden-mobile">
       <h1 class="title is-5">You may also like</h1>
-      article list here later
+      <div class="container">
+        <div class="columns" style="display:flex; justify-content: center;">
+          <div v-for="item in listOfArticle" :key="item.id">
+            <article-card :product="item" />      
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import ArticleCard from '@/components/ArticleCard.vue';
 
 export default {
   name: 'Article',
   components: {
-
+    ArticleCard
+  },
+  data() {
+    return(
+      {
+        listOfArticle: [{ path:"a1.png",name:"5 อาหารอีสาน รสชาติแบบต้นตำรับ",title:"อาหาร"},{ path:"a2.png",name:"เพราะอาหารทำให้ฉันได้เปิดโลก",title:"สุขภาพ"},{ path:"a3.png",name:"ใครว่าคุณตาทำอาหารไม่เป็น",title:"สร้างแรงบันดาลใจ"}],
+      }
+    );
   },
 };
 </script>

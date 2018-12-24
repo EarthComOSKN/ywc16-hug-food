@@ -1,7 +1,7 @@
 <template>
   <div class="checkout">
     <div class="navbar-bg"></div>
-    
+
     <section class="stepbar">
       <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
         <ul>
@@ -25,25 +25,21 @@
             </div>
             </div>
           </div>
-          <div class="card">
+          <!-- <div class="card">
             <header class="card-header">
               <p class="card-header-title">อาหารสด</p>
             </header>
             <div class="card-content">
               <div class="columns">
-                <div class="column is-3">
-                  <img src="https://via.placeholder.com/150" alt="">
-                </div>
                 <div class="column">
-                  <strong>ชื่อรายการ</strong>
-                  <br>
-                  รายละเอียด
                 </div>
-                <div class="column is-2">฿128</div>
-                <div class="column is-2">1</div>
+                <div class="column is-narrow">
+                  ไม่มีรายการ
+                </div>
+                <div class="column"></div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="card">
             <header class="card-header">
               <p class="card-header-title">อาหารแห้ง</p>
@@ -51,12 +47,12 @@
             <div class="card-content">
               <div class="columns">
                 <div class="column is-3">
-                  <img src="https://via.placeholder.com/150" alt="">
+                  <img src="/picture/10.jpg" alt="">
                 </div>
                 <div class="column">
-                  <strong>ชื่อรายการ</strong>
+                  <strong>ปลาร้าบอง</strong>
                   <br>
-                  รายละเอียด
+                  <span style="font-size: 75%">ของดีเมืองอุดรฯ รสชาติภูธร มาเป็นต่อนเลยนะจ๊ะ</span>
                 </div>
                 <div class="column is-2">฿128</div>
                 <div class="column is-2">1</div>
@@ -70,7 +66,7 @@
             <div class="card-content">
               <div class="columns">
                 <div class="column">ราคา</div>
-                <div class="column is-3">฿ 888</div>
+                <div class="column is-3">฿128</div>
               </div>
               <div class="columns">
                 <div class="column">
@@ -84,12 +80,12 @@
               </div>
               <div class="columns">
                 <div class="column">ส่วนลด</div>
-                <div class="column is-3">฿ 0</div>
+                <div class="column is-3">฿0</div>
               </div>
               <div class="divider"></div>
               <div class="columns">
                 <div class="column"><strong>รวมทั้งหมด</strong></div>
-                <div class="column is-3"><strong>฿ 888</strong></div>
+                <div class="column is-3"><strong>฿128</strong></div>
               </div>
             </div>
           </div>
@@ -151,20 +147,20 @@
             <div class="card-content">
               <div class="columns">
                 <div class="column">ราคา</div>
-                <div class="column is-3">฿ 888</div>
+                <div class="column is-3">฿128</div>
               </div>
               <div class="columns">
                 <div class="column">ค่าจัดส่ง</div>
-                <div class="column is-3">฿ 888</div>
+                <div class="column is-3">฿40</div>
               </div>
               <div class="columns">
                 <div class="column">ค่าบริการ</div>
-                <div class="column is-3">฿ 888</div>
+                <div class="column is-3">฿1ุ8</div>
               </div>
               <div class="divider"></div>
               <div class="columns">
                 <div class="column"><strong>ยอดรวม</strong></div>
-                <div class="column is-3"><strong>฿ 888</strong></div>
+                <div class="column is-3"><strong>฿168</strong></div>
               </div>
             </div>
           </div>
@@ -203,20 +199,20 @@
               <h1 class="title is-5">ใบเสร็จชำระเงิน</h1>
               <div class="columns">
                 <div class="column">ราคา</div>
-                <div class="column is-3">฿ 888</div>
+                <div class="column is-3">฿128</div>
               </div>
               <div class="columns">
                 <div class="column">ค่าส่ง</div>
-                <div class="column is-3">฿ 888</div>
+                <div class="column is-3">฿40</div>
               </div>
               <div class="columns">
                 <div class="column">ค่าบริการ</div>
-                <div class="column is-3">฿ 888</div>
+                <div class="column is-3">฿168</div>
               </div>
               <div class="divider"></div>
               <div class="columns">
                 <div class="column"><strong>ค่าบริการ</strong></div>
-                <div class="column is-3"><strong>฿ 888</strong></div>
+                <div class="column is-3"><strong>฿168</strong></div>
               </div>
             </div>
           </div>
@@ -225,8 +221,9 @@
       </div>
 
       <div class="stepbtn">
-        <button class="button" @click="step -= 1">กลับ</button>
-        <button class="button is-info" @click="step += 1">ยืนยันการสั่งซื้อ</button>
+        <router-link to="/">
+          <button class="button is-info">กลับสู่หน้าหลัก</button>
+        </router-link>
       </div>
     </div><!-- end of step 3 -->
 
