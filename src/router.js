@@ -5,7 +5,7 @@ import Mall from './views/Mall.vue';
 import Restaurant from './views/Restaurants.vue';
 import ProductMallDetail from './views/MallDetail.vue';
 import ProductRestaurantDetail from './views/RestaurantDetail.vue';
-import Payment from './views/Payment.vue';
+import Checkout from './views/Checkout.vue';
 import Article from './views/Article';
 
 
@@ -46,9 +46,9 @@ export default new Router({
       component: ProductRestaurantDetail,
     },
     {
-      path: '/payment',
-      name: Payment,
-      component: Payment,
+      path: '/checkout',
+      name: Checkout,
+      component: Checkout,
     },
   ],
 });

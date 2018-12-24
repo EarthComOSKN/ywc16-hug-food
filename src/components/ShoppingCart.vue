@@ -19,13 +19,16 @@
         <div class="column is-2">1</div>
       </div>
     </div>
-    <button class="button is-info checkout">สั่งซื้อ</button>
+    <router-link to="/checkout">
+      <button class="button is-info checkout" @click="toggleCartSideBar()">สั่งซื้อ</button>
+    </router-link>
+    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'ShoppingCart',
@@ -36,7 +39,12 @@ export default {
     ...mapState([
       'isCartSidebarOpen'
     ])
-  }
+  },
+  methods: {
+    ...mapActions([
+      'toggleCartSideBar'
+    ])
+  },
 };
 </script>
 
