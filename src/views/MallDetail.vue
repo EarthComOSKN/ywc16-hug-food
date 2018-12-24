@@ -5,13 +5,13 @@
         <div class="column" style="background-color : rgba(100,100,100,0.1); height :calc(100vh - 4rem - 28px); padding:70px 50px 0px 50px;">
           <carousel class="is-hidden-touch" :perPage="1" :navigationEnabled="true">
             <slide>
-            <img src="https://via.placeholder.com/800x800">
+            <img src="https://via.placeholder.com/600x600">
             </slide>
             <slide>
-              <img src="https://via.placeholder.com/800x800">
+              <img src="https://via.placeholder.com/600x600">
             </slide>
             <slide>
-              <img src="https://via.placeholder.com/800x800">
+              <img src="https://via.placeholder.com/600x600">
             </slide>
           </carousel>
         </div>
