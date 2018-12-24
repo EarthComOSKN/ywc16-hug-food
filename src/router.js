@@ -7,6 +7,7 @@ import ProductMallDetail from './views/MallDetail.vue';
 import ProductRestaurantDetail from './views/RestaurantDetail.vue';
 import Payment from './views/Payment.vue';
 import ShoppingCart from './views/ShoppingCart.vue';
+import Article from './views/Article';
 
 
 Vue.use(Router);
@@ -19,6 +20,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/article',
+      name: 'article',
+      component: Article,
     },
     {
       path: '/mall',
