@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-      </a>
+      <router-link class="navbar-item" to="/">
+        <img src="/picture/hugfood-logo.svg" width="112" height="100%">
+      </router-link>
 
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
         data-target="navbarBasicExample">
@@ -13,43 +13,33 @@
       </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          <router-link to="/">Home</router-link>
-        </a>
-
-        <a class="navbar-item">
-          <router-link to="/restaurant">Restaurants</router-link>
-        </a>
-        <a class="navbar-item">
-          <router-link to="/mall">Malls</router-link>
-        </a>
-        <a class="navbar-item">
-          <a href="#" @click="toggleCartSideBar()">Shopping Cart</a>
-        </a>
-        <a class="navbar-item">
-            <p>earth</p>
-        </a>
-        
-
-    
-        </div>
-        </div>
-
     <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            <router-link to="/">หน้าแรก</router-link>
           </a>
-          <a class="button is-light">
-            Log in
+          <a class="navbar-item">
+            <router-link to="/mall">ร้านค้า</router-link>
+          </a>
+          <a class="navbar-item">
+            <router-link to="/restaurant">เฟรช</router-link>
+          </a>
+          <a class="navbar-item">
+            <span @click="toggleCartSideBar()">ตะกร้า</span>
+          </a>
+          <div class="spacer"></div>
+          <a class="navbar-item">
+            <img class="avatar" src="/picture/jixiao-huang-672681-unsplash.jpg" alt="">
+            <strong>สวัสดี</strong>, มนีรัตน์
+          </a>
+          <a class="navbar-item" @click="toggleCartSideBar()">
+            <img class="cart" src="/picture/online-shopping-cart.svg" alt="">
           </a>
         </div>
       </div>
     </div>
- 
+
   </nav>
 </template>
 
@@ -68,3 +58,37 @@
   };
 
 </script>
+
+<style lang="scss" scoped>
+  .navbar {
+    background: none;
+    position: absolute;
+    top: 0;
+    padding: 1rem 2rem;
+    width: 100vw;
+
+    a {
+      color: white;
+      &:hover {
+        color: black;
+      }
+    }
+
+    .spacer {
+      width: 20px;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      margin-right: .5rem;
+      object-fit: cover;
+      width: 28px;
+      height: 28px;
+    }
+
+    .cart {
+      transform: scale(0.8)
+    }
+  }
+
+</style>
